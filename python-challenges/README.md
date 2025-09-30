@@ -25,8 +25,8 @@ At the end, you’ll put everything together into a **menu-driven CLI program** 
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR-USERNAME/cash-register-challenges.git
-cd cash-register-challenges
+git clone https://github.com/moe-ky/coding-challenges.git
+cd python-challenges
 ```
 
 ### 2. Create and activate a virtual environment (recommended)
@@ -98,5 +98,3 @@ By the end of this project, you’ll have:
 - Assembled a working **menu-driven CLI cash register**  
 
 ---
-
-🚀 Ready? Start with `challenge_01.py`, run the tests, and begin your journey!
