@@ -1,8 +1,8 @@
-# 🛒 Cash Register Python Challenges
+# Python Challenges
 
-Welcome to the **Cash Register Python Challenge Project**!  
+Welcome to the **Python Challenge Project**!  
 
-This repo contains a sequence of beginner-friendly Python mini-projects that gradually build up to a working **cash register CLI program**. Each challenge is self-contained, and by completing them in order, you’ll practice core Python skills like variables, loops, functions, conditionals, error handling, and formatting.
+This repo contains a sequence of beginner-friendly Python mini-projects that gradually build up to a working e.g. the **cash register CLI program**. Each challenge is self-contained, and by completing them in order, you’ll practice core Python skills like variables, loops, functions, conditionals, error handling, and formatting.
 
 ---
 
@@ -32,8 +32,12 @@ cd python-challenges
 ### 2. Create and activate a virtual environment (recommended)
 ```bash
 python3 -m venv .venv
-source .venv/bin/activate   # On Mac/Linux
-.venv\Scripts\activate      # On Windows PowerShell
+
+# On Mac/Linux
+source .venv/bin/activate
+
+# On Windows PowerShell
+.venv\Scripts\activate     
 ```
 
 ### 3. Install requirements
