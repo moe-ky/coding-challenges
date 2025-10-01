@@ -1,26 +1,45 @@
-Challenge 1 — Look Up a Unit Price
-Description
+# Challenge 1 — Price Lookup
 
-Write a function to safely look up the price of an item by name in a price list dictionary.
+## 📝 Description
+Write a function that looks up the price of a given item in a price list.  
+If the item is not found, return `0.0`.
 
-Learning goals:
-    - Read from a dictionary
-    - Return a default when a key is missing
+## 🎯 Learning Goals
+- Accessing dictionary values  
+- Using `dict.get()` safely  
+- Returning default values when a key is missing  
 
-Function signature
-def lookup_price(price_list: dict[str, float], item: str) -> float | None:
+## 🔧 Function Signature
+```python
+def lookup_price(price_list: dict[str, float], item: str) -> float:
     ...
+```
 
+## 💡 Input/Output Examples
+- `lookup_price(PRICE_LIST, "apple") -> 0.80`  
+- `lookup_price(PRICE_LIST, "bread") -> 1.50`  
+- `lookup_price(PRICE_LIST, "unknown") -> 0.0`  
+
+## ✅ Acceptance Criteria
+- Returns the correct price if item exists  
+- Returns `0.0` if item does not exist  
+- Always returns a float  
+
+## 🚀 Starter Code
+```python
 PRICE_LIST = {"apple": 0.80, "bread": 1.50, "milk": 1.15, "banana": 0.30}
 
-Input/Output examples:
+def lookup_price(price_list: dict[str, float], item: str) -> float:
+    # your code here
+    return 0.0  # replace
+```
 
-    - lookup_price(PRICE_LIST, "apple") -> 0.80
-    - lookup_price(PRICE_LIST, "eggs") -> None
-    - lookup_price({}, "apple") -> None
+## 🕵️ Hints
+- Try using `price_list.get(item, 0.0)` to avoid KeyErrors.  
 
-Acceptance criteria:
+## ⚠️ Common Pitfalls
+- Forgetting to return `0.0` for unknown items  
+- Returning `None` instead of a float  
 
-    - Returns the float price if the item exists
-    - Returns None if item is unknown (no crashes)
-    - Does not modify price_list
+## 🌟 Stretch Goals
+- Make the lookup case-insensitive (e.g., `"Apple"` should match `"apple"`)  
